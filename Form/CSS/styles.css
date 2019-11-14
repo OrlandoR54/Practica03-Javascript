@@ -11,11 +11,28 @@ h1 {
     background-color: #2A68A7;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 100px
+}
+
+.btnRegreso {
+    padding: 3px 18px 3px 18px;
+    width: fit-content;
+    margin-top: 260px;
+    margin-left: 700px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(31, 16, 163);
+    border-radius: 6px;
+    border-color: royalblue;
+}
+
 .contenedor{
     width: fit-content;
-    margin: auto;
+    margin-top: 50px;
+    margin-left: 560px;
     padding: 10px;
-    margin-top: 10%;
     background-color: #2A68A7;
     border-radius: 10px;
 }
