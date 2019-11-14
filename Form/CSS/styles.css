@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+	margin: 0px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+.contenedor{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.botones{
+    padding: 0px 18px 18px 18px;
+    width: 100%;
+	background-color: black;
+	color: #fff;
+	border: none;
+	font-size: 50px;
+	padding: 0px
+}
+
+.boton {
+   
+}
