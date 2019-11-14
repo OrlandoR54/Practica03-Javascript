@@ -2,11 +2,13 @@
     padding: 0px;
 	margin: 0px;
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: rgb(199, 195, 188);
 }
 
 h1 {
     text-align: center;
     font-size: 40px;
+    background-color: #2A68A7;
 }
 
 .contenedor{
@@ -41,10 +43,12 @@ form {
     border: 1px solid #072F58;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color: #2A68A7;
 }
 
 .inf {
     padding: 7px;
+    background-color: #2A68A7;
 }
 
 label {
@@ -56,10 +60,17 @@ label {
     margin-bottom: 10px;
     width: 46%;
     text-align: left;
+    background-color: #2A68A7;
 }
 
 input {
     font-weight: bold;
     font-size: 17px;
     border-radius: 3px; 
+    background-color: whitesmoke;
+}
+
+span {
+    background-color: #2A68A7;
+    color: rgb(182, 17, 17);
 }
