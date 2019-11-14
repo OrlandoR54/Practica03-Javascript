@@ -9,18 +9,25 @@
     margin: auto;
     padding: 10px;
     margin-top: 10%;
-}
-
-.botones{
-    padding: 0px 18px 18px 18px;
-    width: 100%;
-	background-color: black;
-	color: #fff;
-	border: none;
-	font-size: 50px;
-	padding: 0px
+    background-color: #2A68A7;
+    border-radius: 10px;
 }
 
 .boton {
-   
+    padding: 3px 18px 3px 18px;
+    font-size: 15px;
+    margin-left: 30px;
 }
+
+.botones{
+    
+    width: 100%;
+	background-color: #04305D;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+
+
