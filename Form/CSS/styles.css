@@ -29,5 +29,10 @@
     border-radius: 10px;
 }
 
+form {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
 
 
