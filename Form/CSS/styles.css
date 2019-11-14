@@ -4,6 +4,11 @@
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
 .contenedor{
     width: fit-content;
     margin: auto;
@@ -15,8 +20,9 @@
 
 .boton {
     padding: 3px 18px 3px 18px;
-    font-size: 15px;
-    margin-left: 30px;
+    margin-left: 57px;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .botones{
@@ -26,13 +32,34 @@
     color: #fff;
     margin-top: 10px;
     padding: 10px 0px 10px 0px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 form {
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
+    border: 1px solid #072F58;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
+.inf {
+    padding: 7px;
+}
 
+label {
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    display: inline-block;
+    color: black;
+    margin-bottom: 10px;
+    width: 46%;
+    text-align: left;
+}
+
+input {
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 3px; 
+}
