@@ -10,28 +10,16 @@
 
 <body>
     <div class="contenedor">
-        <div class="desliz fade" >
-            <input class="imagen" id="im" value="" type="image" disabled>
+        <div class="desliz">
+            <input class="imagen" id="imgN" value="" type="image" disabled>
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
     <br>
 
-    <div class="punto">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
-
     <div class="boton">
-        <input class="prev" id="btnPrev"type="submit" value="Anterior" onclick="prev()">
-        <input type="submit" value="Iniciar" onclick="iniciar()">
-        <input class="next" id="btnNext"type="submit" value="Siguiente" onclick="next()">
+        <input class="prev" id="btnPrev" type="submit" value="Anterior" onclick="anterior()">
+        <input class="start" type="submit" value="Iniciar" onclick="iniciar()">
+        <input class="next" id="btnNext" type="submit" value="Siguiente" onclick="siguiente()">
     </div>
 
     <script src="Script/transiccion.js"></script>
