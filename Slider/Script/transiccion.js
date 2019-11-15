@@ -1,123 +1,124 @@
-var array = new Array();
-array[0] = new Image();
-array[0].src = "images/Brooklyn-3.jpg";
-array[1] = new Image();
-array[1].src = "images/Busa - Carlos-3.jpg";
-array[2] = new Image();
-array[2].src = "images/Central Park-1.jpg";
-array[3] = new Image();
-array[3].src = "images/cover 1.jpg";
-array[4] = new Image();
-array[4].src = "images/cover 2.jpg";
-array[5] = new Image();
-array[5].src = "images/cover 3.jpg";
-array[6] = new Image();
-array[6].src = "images/pink.jpg";
-array[7] = new Image();
-array[7].src = "images/suitUp.jpg";
-array[8] = new Image();
-array[8].src = "images/Trabajo-3.jpg";
-array[9] = new Image();
-array[9].src = "images/joker.jpg";
+var imgArray = new Array();
+imgArray[0] = new Image();
+imgArray[0].src = "images/1.jpg";
+imgArray[1] = new Image();
+imgArray[1].src = "images/2.jpg";
+imgArray[2] = new Image();
+imgArray[2].src = "images/3.jpg";
+imgArray[3] = new Image();
+imgArray[3].src = "images/4.jpg";
+imgArray[4] = new Image();
+imgArray[4].src = "images/5.jpg";
+imgArray[5] = new Image();
+imgArray[5].src = "images/6.jpg";
+imgArray[6] = new Image();
+imgArray[6].src = "images/7.jpg";
+imgArray[7] = new Image();
+imgArray[7].src = "images/8.jpg";
+imgArray[8] = new Image();
+imgArray[8].src = "images/9.jpg";
+imgArray[9] = new Image();
+imgArray[9].src = "images/10.jpg";
 
-var transicion = [];
-var pos;
+var numeros = [];
+var lugar;
 
 function iniciar() {
-    pos = 0;
-    document.getElementById("im").disabled = false;
-    var opc = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    lugar = 0;
+    document.getElementById("imgN").disabled = false;
+    var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         ranNums = [];
-    (i = opc.length), (j = 0);
+    (i = nums.length), (j = 0);
     while (i--) {
         j = Math.floor(Math.random() * (i + 1));
-        ranNums.push(opc[j]);
-        opc.splice(j, 1);
+        ranNums.push(nums[j]);
+        nums.splice(j, 1);
     }
-    for (var n = 0; n < 5; n++) transicion[n] = ranNums[n];
+    for (var n = 0; n < 5; n++) numeros[n] = ranNums[n];
     desactivarAnterior();
     ActivarSiguiente();
-    document.getElementById("im").src = array[transicion[pos]].src;
+    document.getElementById("imgN").src = imgArray[numeros[lugar]].src;
 }
 
-function next() {
-    if (pos < 4) {
-      ActivarAnterior();
-      pos++;
-      document.getElementById("im").src = imgArray[transicion[pos]].src;
-    }
-    if (pos == 4) {
-      desactivarSiguiente();
-    }
-    console.log(pos);
-  }
+function siguiente() {
 
-  function prev() {
-    if (pos > 0) {
-      ActivarSiguiente();
-      pos--;
-      document.getElementById("im").src = array[transicion[pos]].src;
+    if (lugar < 4) {
+        ActivarAnterior();
+        lugar++;
+        document.getElementById("imgN").src = imgArray[numeros[lugar]].src;
     }
-    if (pos == 0) {
-      desactivarAnterior();
+    if (lugar == 4) {
+        desactivarSiguiente();
     }
-    console.log(pos);
-  }
+    console.log(lugar);
+}
+
+function anterior() {
+    if (lugar > 0) {
+        ActivarSiguiente();
+        lugar--;
+        document.getElementById("imgN").src = imgArray[numeros[lugar]].src;
+    }
+    if (lugar == 0) {
+        desactivarAnterior();
+    }
+    console.log(lugar);
+}
 
 function desactivarAnterior() {
     document.getElementById("btnPrev").disabled = true;
     document.getElementById("btnPrev").style.color = "rgb(83, 81, 81)";
-    document.getElementById("btnPrev").style.background =
-        " rgb(170, 165, 165)";
-    document.getElementById("btnPrev").style.border = "2px solid #ffffff";
+    document.getElementById("btnPrev").style.background = "rgb(170, 165, 165)";
 }
 
 function ActivarAnterior() {
     document.getElementById("btnPrev").disabled = false;
     document.getElementById("btnPrev").style.color = "rgb(255, 255, 255)";
-    document.getElementById("btnPrev").style.background = "#1883ba";
-    document.getElementById("btnPrev").style.border = "2px solid #999";
+    document.getElementById("btnPrev").style.background = "#CAD51E";
 }
 
 function desactivarSiguiente() {
     document.getElementById("btnNext").disabled = true;
     document.getElementById("btnNext").style.color = "rgb(83, 81, 81)";
-    document.getElementById("btnNext").style.background =
-        " rgb(170, 165, 165)";
-    document.getElementById("btnNext").style.border = "2px solid #ffffff";
+    document.getElementById("btnNext").style.background = " rgb(170, 165, 165)";
 }
 
 function ActivarSiguiente() {
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").style.color = "rgb(255, 255, 255)";
-    document.getElementById("btnNext").style.background = "#1883ba";
-    document.getElementById("btnNext").style.border = "2px solid #999";
+    document.getElementById("btnNext").style.background = "#CAD51E";
 }
 
-
-showSlides(transicion);
-
-function aumentar(n) {
-    showSlides(transicion += n);
-}
-
-function currentSlide(n) {
-    showSlides(transicion = n);
+function currentSlide() {
+    document.getElementsByClassName(dot).innerHTML
 }
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("desliz");
+    var slides = document.getElementById("imgN").src = imgArray[numeros[lugar]].src;
+    var temp2 = []
+    temp2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    for (let k = 0; k < temp2.length; k++) {
+        const element = array[k];
+        if (element == temp) {
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.imgArray[numeros[lugar]].src;
+            }
+        }
+    }
+
+    document.getElementById("imprime").innerHTML = slides;
     var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { transicion = 1 }
-    if (n < 1) { transicion = slides.length }
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[transicion - 1].style.display = "block";
-    dots[transicion - 1].className += " active";
-
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
