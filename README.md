@@ -10,11 +10,11 @@
 
 Para este apartado primero se realizó la interfaz usando HTML y CSS, en donde el usuario podrá ingresar los datos requeridos. 
 
-![](README/1.png)
+![](README/1.PNG)
 
 Mediante JavaScript se validaron que todos los campos estén ingresados correctamente.
 
-![](README/2.png)
+![](README/2.PNG)
 
 Para la validación de sólo números o sólo letras, se implementó un método con el evento oninput, con el objetivo de que la validación se realice en tiempo real. 
 El método consiste en aplicar un ‘filtro’, en donde se ingresan todos los caracteres que son válidos, y al momento en el que el usuario ingresa un nuevo caracter, éste se compara con el filtro y se agrega si es válido, o se borra en el caso contrario.
@@ -27,15 +27,15 @@ En cuanto todas las validaciones son aceptadas bajo los parámetros requeridos, 
 
 Primero, usando HTML se crean las etiquetas que contendrán las imágenes que se van a presentar en la galería y los botones encargados de la navegación.
 
-![](README/3.png)
+![](README/3.PNG)
 
 Luego, por medio de JavaScript, se eligen 5 de las 10 imágenes cargadas en la carpeta img de forma randómica. Para esto se crea un array con los índices de cada una de las 10 imágenes, y de manera aleatoria se eliminan 5 índices. Por medio del método sort() se reordena el array de manera aleatoria y finalmente se cargan las imágenes en las etiquetas HTML creadas previamente.
 
-![](README/4.png)
+![](README/4.PNG)
 
 Por último, se le da funcionalidad a los botones encargados de la navegación para que las imágenes avancen o retrocedan, y al llegar al final o al comienzo de la galería los botones adelante o atrás, respectivamente, se deshabiliten para no permitir que el usuario avance. Esto se logra deshabilitando las etiquetas de las imágenes que no se desean mostrar, y habilitando únicamente la imagen que se muestra por medio de la navegación.
 
-![](README/5.png)
+![](README/5.PNG)
 
 ### RESULTADO(S) OBTENIDO(S):
 Gracias JavaScript se han logrado implementar funciones dentro de las páginas HTML, ofreciendo una mayor variedad de opciones al usuario y mejorando su experiencia dentro de la misma, ya que mediante funciones podemos agregar animación a nuestra página. Hemos logrado, además, aumentar la seguridad de la información mediante la validación de datos, asegurándonos que el usuario llene todos los campos de manera correcta. 
